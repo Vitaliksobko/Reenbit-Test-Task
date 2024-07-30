@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="Azure.Identity" Version="1.13.0-beta.1" />
+        <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.6.0" />
+        <PackageReference Include="Microsoft.Azure.SignalR" Version="1.26.0" />
+        <PackageReference Include="Microsoft.Azure.SignalR.Management" Version="1.26.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.24" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Chat.Application\Chat.Application.csproj" />
+      <ProjectReference Include="..\Chat.Domain\Chat.Domain.csproj" />
+      <ProjectReference Include="..\Chat.Infrastructure\Chat.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

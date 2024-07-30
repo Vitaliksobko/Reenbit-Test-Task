@@ -1,0 +1,188 @@
+<body style="height: 100vh;">
+  <div class="login-root">
+    <div
+      class="box-root flex-flex flex-direction--column"
+      style="height: 100vh; flex-grow: 1"
+    >
+      <div class="loginbackground box-background--white padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div
+            class="box-root flex-flex"
+            style="grid-area: top / start / 8 / end"
+          >
+            <div
+              class="box-root"
+              style="
+                background-image: linear-gradient(
+                  white 0%,
+                  rgb(247, 250, 252) 33%
+                );
+                flex-grow: 1;
+              "
+            ></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5">
+            <div
+              class="box-root box-divider--light-all-2"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div
+            class="box-root flex-flex"
+            style="grid-area: 6 / start / auto / 2"
+          >
+            <div
+              class="box-root box-background--blue800"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div
+            class="box-root flex-flex"
+            style="grid-area: 7 / start / auto / 4"
+          >
+            <div
+              class="box-root box-background--blue"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6">
+            <div
+              class="box-root box-background--gray100"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div
+            class="box-root flex-flex"
+            style="grid-area: 2 / 15 / auto / end"
+          >
+            <div
+              class="box-root box-background--cyan200"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div
+            class="box-root flex-flex"
+            style="grid-area: 3 / 14 / auto / end"
+          >
+            <div
+              class="box-root box-background--blue"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20">
+            <div
+              class="box-root box-background--gray100"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17">
+            <div
+              class="box-root box-divider--light-all-2"
+              style="flex-grow: 1"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="box-root padding-top--24 flex-flex flex-direction--column"
+        style="position: absolute; top: 40px; left: 30%; flex: 1; z-index: 9"
+      >
+        <div
+          class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
+        >
+          <h1>
+            <a
+              class="main-form-title"
+              href="http://blog.stackfindover.com/"
+              rel="dofollow"
+              >You can register here!</a
+            >
+          </h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <form id="stripe-login">
+                <div class="field padding-bottom--24">
+                  <label for="exampleInputName1">Enter your first name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName"
+                    aria-describedby="Namehelp"
+                    placeholder="First name"
+                    name="name"
+                    [(ngModel)]="registrationModel.firstName"
+                  />
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="exampleInputName1">Enter your last name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName"
+                    aria-describedby="Namehelp"
+                    placeholder="Enter LastName"
+                    name="name"
+                    [(ngModel)]="registrationModel.secondName"
+                  />
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    name="email"
+                    [(ngModel)]="registrationModel.email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                    name="password"
+                    [(ngModel)]="registrationModel.password"
+                  />
+                </div>
+                <div *ngIf="errorMessage" class="error-message">
+                  {{ errorMessage }}
+              </div>
+
+                <div class="field padding-bottom--24">
+                  <button
+                    type="submit"
+                    (click)="onRegistration()"
+                    class="btn-submit"
+                  >
+                    Registration
+                  </button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            <small id="emailHelp" class="add-ac form-text text-muted"
+              ><a routerLink="/login">Don't have account? Click here.</a></small
+            >
+            <div
+              class="listing padding-top--24 padding-bottom--24 flex-flex center-center"
+            >
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
