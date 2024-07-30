@@ -22,9 +22,9 @@
 
 - Log in or register if you don't have an account, it may take a few seconds
 
-    - email address must contain @gmail.com or another valid domain
+- Email address should include @gmail.com or another valid domain.
 
-    - password must contain at least 8 characters
+- Password must be at least 8 characters long.
 
 
 ![login page](images/Pic1.png)
