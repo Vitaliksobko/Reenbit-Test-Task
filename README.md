@@ -20,9 +20,7 @@
 
 - Go to the [https://frontpart.azurewebsites.net/login](https://frontpart.azurewebsites.net/login)
 
-- Register or log in, it may take a few seconds to load
-
-    - Use valid data:
+- Log in or register if you don't have an account, it may take a few seconds
 
     - email address must contain @gmail.com or another valid domain
 
