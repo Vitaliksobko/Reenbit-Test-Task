@@ -20,7 +20,7 @@
 
 - Go to the [https://frontpart.azurewebsites.net/login](https://frontpart.azurewebsites.net/login)
 
-- Register or log in  it may take a few seconds to load
+- Register or log in, it may take a few seconds to load
 
     - Use valid data:
 
