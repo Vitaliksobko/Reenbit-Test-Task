@@ -1,10 +1,6 @@
 # Reenbit.TestTask
 
-## About Project
-
-This project was created as a test task for intern position at Reenbit
-
-
+## This project was created as a test task for intern position at Reenbit
 
 ## Used Technologies
 
@@ -18,10 +14,7 @@ This project was created as a test task for intern position at Reenbit
 - **Azure Cognitive Services Text Analytics**
 - **Azure Key Vault**
 
-**Features:**
-- Unit Of Work and Base Repository patterns
-- Secrets management with Azure Key Vault
-- Fully deployed on Azure
+
 
 ## User Instructions
 
